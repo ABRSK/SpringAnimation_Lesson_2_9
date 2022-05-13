@@ -5,8 +5,6 @@
 //  Created by Андрей Барсук on 13.05.2022.
 //
 
-import Foundation
-
 struct Animation {
     let name: String
     let curve: String
