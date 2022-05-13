@@ -16,7 +16,7 @@ struct Animation {
     
     var description: String {
         """
-        Animation: \(name)
+        Name: \(name)
         Curve: \(curve)
         Force: \(force)
         Duration: \(duration)
