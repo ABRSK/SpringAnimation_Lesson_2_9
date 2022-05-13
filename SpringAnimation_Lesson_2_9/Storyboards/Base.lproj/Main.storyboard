@@ -29,8 +29,11 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playAnimationButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P8F-fn-bPd"/>
+                                </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67e-0S-u2b">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67e-0S-u2b" customClass="SpringView" customModule="Spring">
                                 <rect key="frame" x="50" y="50" width="275" height="200"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9t7-wQ-dCP">
@@ -67,6 +70,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="67e-0S-u2b" secondAttribute="trailing" constant="50" id="rkG-6j-hl9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="animationLabel" destination="9t7-wQ-dCP" id="FWq-xn-5t0"/>
+                        <outlet property="animationView" destination="67e-0S-u2b" id="tTd-am-tPq"/>
+                        <outlet property="playAnimationButton" destination="qmv-6j-B9x" id="16q-ZW-9ag"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
